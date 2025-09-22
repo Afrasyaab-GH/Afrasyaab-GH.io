@@ -8,14 +8,14 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icons/icon-192-maskable.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icons/icon-192-maskable.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Habibur Rahman · Portfolio</title>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
     <header class="app-bar" data-elevated>
       <div class="container app-bar__inner">
         <a href="#home" class="brand">
@@ -28,11 +28,19 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </button>
           <ul class="nav__menu" id="nav-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            <li class="lang-picker">
+              <label class="sr-only" for="langSelect">Language</label>
+              <select id="langSelect" aria-label="Language">
+                <option value="en">EN</option>
+                <option value="ps">پښتو</option>
+                <option value="fa">دری</option>
+              </select>
+            </li>
             <li class="theme-toggle">
               <button id="themeToggle" class="icon-btn" title="Toggle theme">
                 <span class="sr-only">Toggle theme</span>
@@ -50,16 +58,16 @@
       <section id="home" class="section hero" aria-label="Intro">
         <div class="container hero__inner">
           <div class="hero__content">
-            <p class="eyebrow">Hello, I’m</p>
+            <p class="eyebrow" data-i18n="hero.hello">Hello, I’m</p>
             <h1 class="display">Habibur Rahman</h1>
-            <p class="lead">Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.</p>
+            <p class="lead" data-i18n="hero.lead">Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.</p>
             <div class="actions">
-              <a class="btn btn--primary" href="#projects">View Projects</a>
-              <a class="btn btn--tonal" href="#contact">Contact Me</a>
+              <a class="btn btn--primary" href="#projects" data-i18n="hero.ctaProjects">View Projects</a>
+              <a class="btn btn--tonal" href="#contact" data-i18n="hero.ctaContact">Contact Me</a>
             </div>
             <div class="quick-meta">
-              <span class="chip">Frontend • Backend • Cloud</span>
-              <span class="chip">Open Source</span>
+              <span class="chip" data-i18n="hero.meta1">Frontend • Backend • Cloud</span>
+              <span class="chip" data-i18n="hero.meta2">Open Source</span>
             </div>
           </div>
           <div class="hero__art">
@@ -80,9 +88,9 @@
       <section id="about" class="section">
         <div class="container grid grid-2">
           <div class="card" data-reveal>
-            <h2>About</h2>
-            <p>I’m a full‑stack developer who loves clean design, robust architecture, and measurable outcomes. I care deeply about accessibility, performance, and developer experience.</p>
-            <p>Currently exploring design systems, modern build tooling, and AI‑assisted development workflows.</p>
+            <h2 data-i18n="section.about.title">About</h2>
+            <p data-i18n="about.p1">I’m a full‑stack developer who loves clean design, robust architecture, and measurable outcomes. I care deeply about accessibility, performance, and developer experience.</p>
+            <p data-i18n="about.p2">Currently exploring design systems, modern build tooling, and AI‑assisted development workflows.</p>
           </div>
           <aside class="card profile" data-reveal>
             <img class="avatar" src="assets/img/avatar.svg" alt="Habibur Rahman avatar" />
@@ -100,18 +108,18 @@
       <!-- Experience -->
       <section id="experience" class="section">
         <div class="container">
-          <h2>Experience</h2>
+          <h2 data-i18n="section.experience.title">Experience</h2>
           <ol class="timeline" data-reveal>
             <li class="timeline__item">
               <div class="timeline__dot"></div>
               <div class="timeline__card card">
                 <header class="timeline__header">
-                  <h3>Senior Software Engineer · Company</h3>
-                  <span class="muted">2023 — Present</span>
+                  <h3 data-i18n="exp1.title">Senior Software Engineer · Company</h3>
+                  <span class="muted" data-i18n="exp1.date">2023 — Present</span>
                 </header>
                 <ul class="list">
-                  <li>Lead development of design system components with accessibility at core.</li>
-                  <li>Improved performance metrics (LCP/CLS) by 30% with modern patterns.</li>
+                  <li data-i18n="exp1.b1">Lead development of design system components with accessibility at core.</li>
+                  <li data-i18n="exp1.b2">Improved performance metrics (LCP/CLS) by 30% with modern patterns.</li>
                 </ul>
               </div>
             </li>
@@ -119,12 +127,12 @@
               <div class="timeline__dot"></div>
               <div class="timeline__card card">
                 <header class="timeline__header">
-                  <h3>Full‑Stack Engineer · Startup</h3>
-                  <span class="muted">2021 — 2023</span>
+                  <h3 data-i18n="exp2.title">Full‑Stack Engineer · Startup</h3>
+                  <span class="muted" data-i18n="exp2.date">2021 — 2023</span>
                 </header>
                 <ul class="list">
-                  <li>Shipped features end‑to‑end across web and cloud services.</li>
-                  <li>Owned CI/CD and observability improvements.</li>
+                  <li data-i18n="exp2.b1">Shipped features end‑to‑end across web and cloud services.</li>
+                  <li data-i18n="exp2.b2">Owned CI/CD and observability improvements.</li>
                 </ul>
               </div>
             </li>
@@ -135,46 +143,46 @@
       <!-- Projects -->
       <section id="projects" class="section">
         <div class="container">
-          <h2>Featured Projects</h2>
+          <h2 data-i18n="section.projects.title">Featured Projects</h2>
           <div class="grid grid-3" data-reveal>
             <article class="card project">
               <div class="project__thumb skeleton"></div>
               <h3>Project Alpha</h3>
-              <p>Next‑gen web app with blazing performance, built with modern stack.</p>
+              <p data-i18n="proj1.desc">Next‑gen web app with blazing performance, built with modern stack.</p>
               <div class="project__meta">
                 <span class="chip">TypeScript</span>
                 <span class="chip">React</span>
                 <span class="chip">Node</span>
               </div>
               <div class="actions">
-                <a class="btn btn--text" href="#">Demo</a>
-                <a class="btn btn--text" href="#">Code</a>
+                <a class="btn btn--text" href="#" data-i18n="btn.demo">Demo</a>
+                <a class="btn btn--text" href="#" data-i18n="btn.code">Code</a>
               </div>
             </article>
             <article class="card project">
               <div class="project__thumb skeleton"></div>
               <h3>Design System Kit</h3>
-              <p>Composable components with Material/One UI aesthetics, fully accessible.</p>
+              <p data-i18n="proj2.desc">Composable components with Material/One UI aesthetics, fully accessible.</p>
               <div class="project__meta">
                 <span class="chip">Web Components</span>
                 <span class="chip">CSS</span>
               </div>
               <div class="actions">
-                <a class="btn btn--text" href="#">Docs</a>
-                <a class="btn btn--text" href="#">Code</a>
+                <a class="btn btn--text" href="#" data-i18n="btn.docs">Docs</a>
+                <a class="btn btn--text" href="#" data-i18n="btn.code">Code</a>
               </div>
             </article>
             <article class="card project">
               <div class="project__thumb skeleton"></div>
               <h3>AI Dev Tools</h3>
-              <p>Automation scripts and assistants to speed up development and testing.</p>
+              <p data-i18n="proj3.desc">Automation scripts and assistants to speed up development and testing.</p>
               <div class="project__meta">
                 <span class="chip">Python</span>
                 <span class="chip">CLI</span>
               </div>
               <div class="actions">
-                <a class="btn btn--text" href="#">Docs</a>
-                <a class="btn btn--text" href="#">Code</a>
+                <a class="btn btn--text" href="#" data-i18n="btn.docs">Docs</a>
+                <a class="btn btn--text" href="#" data-i18n="btn.code">Code</a>
               </div>
             </article>
           </div>
@@ -184,7 +192,7 @@
       <!-- Skills -->
       <section id="skills" class="section">
         <div class="container">
-          <h2>Skills</h2>
+          <h2 data-i18n="section.skills.title">Skills</h2>
           <div class="chips" data-reveal>
             <span class="chip chip--elevated">JavaScript</span>
             <span class="chip chip--elevated">TypeScript</span>
@@ -206,30 +214,30 @@
       <section id="contact" class="section">
         <div class="container grid grid-2">
           <div class="card" data-reveal>
-            <h2>Contact</h2>
-            <p>Have a question or want to work together? Send a message and I’ll get back to you.</p>
+            <h2 data-i18n="section.contact.title">Contact</h2>
+            <p data-i18n="contact.p1">Have a question or want to work together? Send a message and I’ll get back to you.</p>
             <form class="form" action="https://formspree.io/f/{your-id}" method="POST">
               <div class="field">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" required placeholder="Your name" />
+                <label for="name" data-i18n="contact.labelName">Name</label>
+                <input id="name" name="name" type="text" required placeholder="Your name" data-i18n-placeholder="contact.phName" />
               </div>
               <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required placeholder="you@example.com" />
+                <label for="email" data-i18n="contact.labelEmail">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com" data-i18n-placeholder="contact.phEmail" />
               </div>
               <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+                <label for="message" data-i18n="contact.labelMessage">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="How can I help?" data-i18n-placeholder="contact.phMessage"></textarea>
               </div>
-              <button class="btn btn--primary" type="submit">Send</button>
+              <button class="btn btn--primary" type="submit" data-i18n="contact.btnSend">Send</button>
             </form>
           </div>
           <aside class="card" data-reveal>
-            <h3>Availability</h3>
-            <p>Open to full‑time roles, freelance projects, and collaborations.</p>
-            <h3>Location</h3>
-            <p>Remote • Global</p>
-            <h3>Elsewhere</h3>
+            <h3 data-i18n="contact.availability">Availability</h3>
+            <p data-i18n="contact.availabilityText">Open to full‑time roles, freelance projects, and collaborations.</p>
+            <h3 data-i18n="contact.location">Location</h3>
+            <p data-i18n="contact.locationText">Remote • Global</p>
+            <h3 data-i18n="contact.elsewhere">Elsewhere</h3>
             <ul class="list">
               <li><a href="https://github.com/HabiburRahman-GH" target="_blank" rel="noopener">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/habiburrahman-mukhlis-06074a379/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -242,11 +250,11 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <small>© <span id="year"></span> Habibur Rahman. All rights reserved.</small>
+        <small>© <span id="year"></span> Habibur Rahman. <span data-i18n="footer.rights">All rights reserved.</span></small>
         <div class="footer__controls">
           <label class="switch">
             <input type="checkbox" id="reduceMotionToggle" />
-            <span>Reduce motion</span>
+            <span data-i18n="footer.reduceMotion">Reduce motion</span>
           </label>
         </div>
       </div>

@@ -5,6 +5,7 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 // Theme persistence
 const themeKey = 'theme-preference';
 const reduceKey = 'reduce-motion';
+const langKey = 'lang-preference';
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 function applyTheme(theme) {
@@ -114,3 +115,85 @@ $('#accentFromImage')?.addEventListener('click', async () => {
   document.documentElement.style.setProperty('--brand-2', `${(h + 40) % 360} ${Math.min(95, s + 10)}% ${Math.min(70, l + 10)}%`);
   applyTheme(getTheme());
 });
+
+// ---- i18n ----
+const dict = {
+  en: {
+    skip: 'Skip to content',
+    nav: { about: 'About', experience: 'Experience', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
+    hero: { hello: 'Hello, I’m', lead: 'Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.', ctaProjects: 'View Projects', ctaContact: 'Contact Me', meta1: 'Frontend • Backend • Cloud', meta2: 'Open Source' },
+    section: { about: { title: 'About' }, experience: { title: 'Experience' }, projects: { title: 'Featured Projects' }, skills: { title: 'Skills' }, contact: { title: 'Contact' } },
+    about: { p1: 'I’m a full‑stack developer who loves clean design, robust architecture, and measurable outcomes. I care deeply about accessibility, performance, and developer experience.', p2: 'Currently exploring design systems, modern build tooling, and AI‑assisted development workflows.' },
+    exp1: { title: 'Senior Software Engineer · Company', date: '2023 — Present', b1: 'Lead development of design system components with accessibility at core.', b2: 'Improved performance metrics (LCP/CLS) by 30% with modern patterns.' },
+    exp2: { title: 'Full‑Stack Engineer · Startup', date: '2021 — 2023', b1: 'Shipped features end‑to‑end across web and cloud services.', b2: 'Owned CI/CD and observability improvements.' },
+    proj1: { desc: 'Next‑gen web app with blazing performance, built with modern stack.' },
+    proj2: { desc: 'Composable components with Material/One UI aesthetics, fully accessible.' },
+    proj3: { desc: 'Automation scripts and assistants to speed up development and testing.' },
+    btn: { demo: 'Demo', docs: 'Docs', code: 'Code' },
+    contact: { p1: 'Have a question or want to work together? Send a message and I’ll get back to you.', labelName: 'Name', phName: 'Your name', labelEmail: 'Email', phEmail: 'you@example.com', labelMessage: 'Message', phMessage: 'How can I help?', btnSend: 'Send', availability: 'Availability', availabilityText: 'Open to full‑time roles, freelance projects, and collaborations.', location: 'Location', locationText: 'Remote • Global', elsewhere: 'Elsewhere' },
+    footer: { rights: 'All rights reserved.', reduceMotion: 'Reduce motion' }
+  },
+  ps: {
+    skip: 'مينځپانګې ته ولاړ شئ',
+    nav: { about: 'زما په اړه', experience: 'تجربه', projects: 'پروژې', skills: 'مهارتونه', contact: 'اړيکه' },
+    hero: { hello: 'سلام، زه يم', lead: 'د لاسرسي، کړنې او ښکلي ډيزاين سره عصري ويب تجربې جوړوم.', ctaProjects: 'پروژې وګورئ', ctaContact: 'اړیکه راسره ونیسئ', meta1: 'فرنټ اينډ • بॅک اينډ • کلاوډ', meta2: 'اوپن سورس' },
+    section: { about: { title: 'زما په اړه' }, experience: { title: 'تجربه' }, projects: { title: 'ځانګړې پروژې' }, skills: { title: 'مهارتونه' }, contact: { title: 'اړيکه' } },
+    about: { p1: 'زه يو فول سټک پرمختياکوونکی يم چې پاک ډيزاين او قوي معمارۍ ته ارزښت ورکوم.', p2: 'اوس مهال د ډيزاين سيسټمونو او عصري وسيلو سپړنه کوم.' },
+    exp1: { title: 'د سينيور سافټویر انجینر · شرکت', date: '۲۰۲۳ — تر اوسه', b1: 'د لاسرسي په پام کې نیولو سره د ډيزاين سيستم برخې رهبري کړې.', b2: 'د کړنې شاخصونه ۳۰٪ ښه کړل.' },
+    exp2: { title: 'فول سټک انجینر · سټارټ اپ', date: '۲۰۲۱ — ۲۰۲۳', b1: 'له پای څخه تر پای پورې بڼې وړاندې کړې.', b2: 'CI/CD او څارنې ته وده ورکړه.' },
+    proj1: { desc: 'د لوړ کړنې سره راتلونکی نسل ويب اپ، د عصري سټک پر بنسټ.' },
+    proj2: { desc: 'د موادو/ون UI ښکلا سره د لاسرسي وړ جوړه کېدونکي برخې.' },
+    proj3: { desc: 'د پرمختګ ګړندي کولو لپاره اتومات او مرستندويه وسيلې.' },
+    btn: { demo: 'ډيمو', docs: 'لاسوندونه', code: 'کوډ' },
+    contact: { p1: 'پوښتنه لرئ؟ پيغام پرېږدئ، ژر ځواب درکوم.', labelName: 'نوم', phName: 'ستاسو نوم', labelEmail: 'برېښنالیک', phEmail: 'you@example.com', labelMessage: 'پيغام', phMessage: 'څنګه مرسته وکړم؟', btnSend: 'لېږل', availability: 'شتون', availabilityText: 'د تمام وخت، فريلانس او همکارۍ لپاره چمتو.', location: 'ځای', locationText: 'لرې • نړيوال', elsewhere: 'بل ځای' },
+    footer: { rights: 'ټولې حقوق خوندي دي.', reduceMotion: 'خوځښت کم کړئ' }
+  },
+  fa: {
+    skip: 'پرش به محتوا',
+    nav: { about: 'درباره من', experience: 'تجربه', projects: 'پروژه‌ها', skills: 'مهارت‌ها', contact: 'ارتباط' },
+    hero: { hello: 'سلام، من', lead: 'تجربه‌های وب مدرن با دسترس‌پذیری و عملکرد بالا می‌سازم.', ctaProjects: 'مشاهده پروژه‌ها', ctaContact: 'تماس با من', meta1: 'فرانت‌اند • بک‌اند • کلود', meta2: 'متن‌باز' },
+    section: { about: { title: 'درباره' }, experience: { title: 'تجربه' }, projects: { title: 'پروژه‌های ویژه' }, skills: { title: 'مهارت‌ها' }, contact: { title: 'ارتباط' } },
+    about: { p1: 'توسعه‌دهنده فول‌استک با علاقه به طراحی پاک و معماری پایدار.', p2: 'در حال کاوش سیستم‌های طراحی و ابزارهای مدرن.' },
+    exp1: { title: 'مهندس ارشد نرم‌افزار · شرکت', date: '۲۰۲۳ — اکنون', b1: 'رهبری توسعه مؤلفه‌های سیستم طراحی با تمرکز بر دسترس‌پذیری.', b2: 'بهبود معیارهای عملکردی تا ۳۰٪.' },
+    exp2: { title: 'مهندس فول‌استک · استارتاپ', date: '۲۰۲۱ — ۲۰۲۳', b1: 'عرضه قابلیت‌ها از ابتدا تا انتها.', b2: 'بهبود CI/CD و مشاهده‌پذیری.' },
+    proj1: { desc: 'اپ وب نسل بعد با عملکرد بالا و پشته مدرن.' },
+    proj2: { desc: 'کیت سیستم طراحی با زیبایی متریال/وان UI، کاملاً قابل دسترس.' },
+    proj3: { desc: 'ابزارهای هوشمند برای تسریع توسعه و آزمایش.' },
+    btn: { demo: 'دمو', docs: 'مستندات', code: 'کد' },
+    contact: { p1: 'سوالی دارید یا می‌خواهید همکاری کنیم؟ پیام بگذارید تا پاسخ دهم.', labelName: 'نام', phName: 'نام شما', labelEmail: 'ایمیل', phEmail: 'you@example.com', labelMessage: 'پیام', phMessage: 'چطور کمک کنم؟', btnSend: 'ارسال', availability: 'دسترس‌پذیری', availabilityText: 'آماده برای تمام‌وقت، فریلنس و همکاری.', location: 'موقعیت', locationText: 'دورکاری • جهانی', elsewhere: 'سایر' },
+    footer: { rights: 'کلیه حقوق محفوظ است.', reduceMotion: 'کاهش پویانمایی' }
+  }
+};
+
+function applyLang(lang) {
+  const html = document.documentElement;
+  html.setAttribute('lang', lang);
+  const rtl = (lang === 'ps' || lang === 'fa');
+  html.setAttribute('dir', rtl ? 'rtl' : 'ltr');
+  // Text nodes
+  $$('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n');
+    const value = key.split('.').reduce((acc, k) => (acc ? acc[k] : undefined), dict[lang]);
+    if (typeof value === 'string') el.textContent = value;
+  });
+  // Placeholders
+  $$('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const value = key.split('.').reduce((acc, k) => (acc ? acc[k] : undefined), dict[lang]);
+    if (typeof value === 'string') el.setAttribute('placeholder', value);
+  });
+  localStorage.setItem(langKey, lang);
+}
+
+function getLang() {
+  return localStorage.getItem(langKey) || (navigator.language || 'en').slice(0,2);
+}
+
+// Initialize language
+const initialLang = ['en','ps','fa'].includes(getLang()) ? getLang() : 'en';
+applyLang(initialLang);
+const langSelect = document.getElementById('langSelect');
+if (langSelect) {
+  langSelect.value = initialLang;
+  langSelect.addEventListener('change', (e) => applyLang(e.target.value));
+}

@@ -58,6 +58,14 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+/* Arabic script fallback for Pashto (ps) and Dari (fa) */
+html[lang="ps"], html[lang="fa"] { font-family: "Noto Naskh Arabic", var(--font-sans); }
+html[dir="rtl"] { direction: rtl; }
+html[dir="rtl"] .app-bar__inner { flex-direction: row-reverse; }
+html[dir="rtl"] .nav__menu { text-align: right; }
+html[dir="rtl"] .timeline::before { left: auto; right: 11px; }
+html[dir="rtl"] .timeline__item { grid-template-columns: 1fr 24px; }
+html[dir="rtl"] .timeline__header { flex-direction: row-reverse; }
 
 img { max-width: 100%; display: block; }
 a { color: hsl(var(--brand)); text-decoration: none; }
