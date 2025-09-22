@@ -34,11 +34,17 @@ Then visit http://localhost:8080
 
 ## Deploy to GitHub Pages
 
-Push to the `main` branch in this repo, then enable Pages:
+This repo includes a GitHub Actions workflow that publishes to GitHub Pages.
 
-1. Repository Settings → Pages
-2. Source: Deploy from branch → Branch: `main` → Folder: `/` (root)
-3. Save, then your site will be available at: https://habiburrahman-gh.github.io/HabiburRahman-GH.io/
+Steps (one-time):
+
+1. Push to `main` (already done)
+2. In GitHub → Settings → Pages → Build and deployment:
+	- Source: GitHub Actions
+3. Wait for the workflow to finish: https://github.com/HabiburRahman-GH/HabiburRahman-GH.io/actions/workflows/pages.yml
+4. Your site will be available at: https://habiburrahman-gh.github.io/HabiburRahman-GH.io/
+
+Tip: If you prefer the legacy option (Deploy from a branch), set Source: Branch → `main` → root, but the provided workflow is the recommended path.
 
 If you use a custom domain, add a `CNAME` file with your domain and configure DNS.
 
