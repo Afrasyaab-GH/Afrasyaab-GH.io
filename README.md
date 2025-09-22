@@ -38,7 +38,7 @@ Push to the `main` branch in this repo, then enable Pages:
 
 1. Repository Settings → Pages
 2. Source: Deploy from branch → Branch: `main` → Folder: `/` (root)
-3. Save, then your site will be available at: https://habiburrahman-gh.github.io/
+3. Save, then your site will be available at: https://habiburrahman-gh.github.io/HabiburRahman-GH.io/
 
 If you use a custom domain, add a `CNAME` file with your domain and configure DNS.
 
