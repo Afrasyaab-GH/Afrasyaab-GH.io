@@ -61,11 +61,12 @@ body {
 /* Arabic script fallback for Pashto (ps) and Dari (fa) */
 html[lang="ps"], html[lang="fa"] { font-family: "Noto Naskh Arabic", var(--font-sans); }
 html[dir="rtl"] { direction: rtl; }
-html[dir="rtl"] .app-bar__inner { flex-direction: row-reverse; }
 html[dir="rtl"] .nav__menu { text-align: right; }
 html[dir="rtl"] .timeline::before { left: auto; right: 11px; }
 html[dir="rtl"] .timeline__item { grid-template-columns: 1fr 24px; }
 html[dir="rtl"] .timeline__header { flex-direction: row-reverse; }
+html[dir="rtl"] .card, html[dir="rtl"] .lead, html[dir="rtl"] .list { text-align: right; }
+html[dir="rtl"] .hero__art figcaption { inset-inline-start: .6rem; inset-inline-end: auto; }
 
 img { max-width: 100%; display: block; }
 a { color: hsl(var(--brand)); text-decoration: none; }
@@ -183,7 +184,12 @@ a:hover { text-decoration: underline; }
   .nav__toggle { display: inline-grid; }
   .nav__menu { position: absolute; right: 0; top: 56px; flex-direction: column; align-items: stretch; background: hsl(var(--surface)); border: 1px solid hsl(var(--border)); border-radius: var(--radius); padding: .5rem; min-width: 220px; box-shadow: var(--shadow-3); display: none; }
   .nav__menu.is-open { display: flex; }
+  html[dir="rtl"] .nav__menu { left: 0; right: auto; }
 }
+
+/* Language picker */
+.lang-picker select { appearance: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid hsl(var(--border)); background: hsl(var(--surface)); color: hsl(var(--text)); height: 36px; padding: 0 .6rem; border-radius: 10px; box-shadow: var(--shadow-1); font-size: 0.9rem; }
+.lang-picker select:focus { outline: 2px solid hsl(var(--brand) / .35); outline-offset: 2px; }
 
 /* Theme icons */
 .icon-moon { display: none; }

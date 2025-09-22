@@ -170,6 +170,7 @@ function applyLang(lang) {
   html.setAttribute('lang', lang);
   const rtl = (lang === 'ps' || lang === 'fa');
   html.setAttribute('dir', rtl ? 'rtl' : 'ltr');
+  document.body.classList.toggle('rtl', rtl);
   // Text nodes
   $$('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n');
@@ -190,10 +191,22 @@ function getLang() {
 }
 
 // Initialize language
-const initialLang = ['en','ps','fa'].includes(getLang()) ? getLang() : 'en';
+let detected = getLang();
+if (!['en','ps','fa'].includes(detected)) {
+  // Map some common locale codes
+  if (detected.startsWith('fa')) detected = 'fa';
+  else if (detected.startsWith('ps')) detected = 'ps';
+  else detected = 'en';
+}
+const initialLang = detected;
 applyLang(initialLang);
 const langSelect = document.getElementById('langSelect');
 if (langSelect) {
   langSelect.value = initialLang;
-  langSelect.addEventListener('change', (e) => applyLang(e.target.value));
+  langSelect.addEventListener('change', (e) => {
+    const value = e.target.value;
+    applyLang(value);
+    // keep selector in sync if language changed elsewhere
+    langSelect.value = value;
+  });
 }
