@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Habibur Rahman — Portfolio" />
+    <meta name="theme-color" content="#0ea5e9" id="theme-color-meta" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icons/icon-192-maskable.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192-maskable.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Habibur Rahman · Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="app-bar" data-elevated>
+      <div class="container app-bar__inner">
+        <a href="#home" class="brand">
+          <span class="brand__logo" aria-hidden="true">HR</span>
+          <span class="brand__text">Habibur Rahman</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" id="navToggle" title="Open menu">
+            <span class="sr-only">Toggle navigation</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="nav__menu" id="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle">
+              <button id="themeToggle" class="icon-btn" title="Toggle theme">
+                <span class="sr-only">Toggle theme</span>
+                <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M5 5 3.5 3.5M20.5 20.5 19 19M19 5l1.5-1.5M3.5 20.5 5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg>
+                <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="section hero" aria-label="Intro">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Hello, I’m</p>
+            <h1 class="display">Habibur Rahman</h1>
+            <p class="lead">Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--tonal" href="#contact">Contact Me</a>
+            </div>
+            <div class="quick-meta">
+              <span class="chip">Frontend • Backend • Cloud</span>
+              <span class="chip">Open Source</span>
+            </div>
+          </div>
+          <div class="hero__art">
+            <figure class="card glass" data-elevated>
+              <img id="accentSource" src="assets/img/cover-gradient.svg" alt="Colorful abstract gradient" />
+              <figcaption>
+                <button class="icon-btn" id="accentFromImage" title="Set theme from image">
+                  <span class="sr-only">Set theme from image</span>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14l-5-5-4 4-3-3-4 4V5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                </button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container grid grid-2">
+          <div class="card" data-reveal>
+            <h2>About</h2>
+            <p>I’m a full‑stack developer who loves clean design, robust architecture, and measurable outcomes. I care deeply about accessibility, performance, and developer experience.</p>
+            <p>Currently exploring design systems, modern build tooling, and AI‑assisted development workflows.</p>
+          </div>
+          <aside class="card profile" data-reveal>
+            <img class="avatar" src="assets/img/avatar.svg" alt="Habibur Rahman avatar" />
+            <ul class="list inline">
+              <li><a class="icon-link" href="#" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.26 1.86 1.26 1.08 1.86 2.83 1.33 3.52 1.02.11-.8.42-1.33.76-1.63-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.39 1.25-3.23-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.78.84 1.25 1.92 1.25 3.23 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 12 .5Z"/></svg></a></li>
+              <li><a class="icon-link" href="#" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 8.98h4v12H3v-12Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.09v6.32h-4v-5.61c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.71h-4v-12Z"/></svg></a></li>
+              <li><a class="icon-link" href="#" aria-label="X / Twitter"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.6 10.59 21.5 2h-1.88l-6.87 7.53L7.76 2H2l8.35 12.03L2 22h1.88l7.26-7.96L16.24 22H22l-8.4-11.41Zm-2.57 2.82-.84-1.2L4.56 3.3h2.2l3.95 5.62.84 1.2 5.94 8.44h-2.2l-3.9-5.95Z"/></svg></a></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Experience</h2>
+          <ol class="timeline" data-reveal>
+            <li class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card card">
+                <header class="timeline__header">
+                  <h3>Senior Software Engineer · Company</h3>
+                  <span class="muted">2023 — Present</span>
+                </header>
+                <ul class="list">
+                  <li>Lead development of design system components with accessibility at core.</li>
+                  <li>Improved performance metrics (LCP/CLS) by 30% with modern patterns.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card card">
+                <header class="timeline__header">
+                  <h3>Full‑Stack Engineer · Startup</h3>
+                  <span class="muted">2021 — 2023</span>
+                </header>
+                <ul class="list">
+                  <li>Shipped features end‑to‑end across web and cloud services.</li>
+                  <li>Owned CI/CD and observability improvements.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Featured Projects</h2>
+          <div class="grid grid-3" data-reveal>
+            <article class="card project">
+              <div class="project__thumb skeleton"></div>
+              <h3>Project Alpha</h3>
+              <p>Next‑gen web app with blazing performance, built with modern stack.</p>
+              <div class="project__meta">
+                <span class="chip">TypeScript</span>
+                <span class="chip">React</span>
+                <span class="chip">Node</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn--text" href="#">Demo</a>
+                <a class="btn btn--text" href="#">Code</a>
+              </div>
+            </article>
+            <article class="card project">
+              <div class="project__thumb skeleton"></div>
+              <h3>Design System Kit</h3>
+              <p>Composable components with Material/One UI aesthetics, fully accessible.</p>
+              <div class="project__meta">
+                <span class="chip">Web Components</span>
+                <span class="chip">CSS</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn--text" href="#">Docs</a>
+                <a class="btn btn--text" href="#">Code</a>
+              </div>
+            </article>
+            <article class="card project">
+              <div class="project__thumb skeleton"></div>
+              <h3>AI Dev Tools</h3>
+              <p>Automation scripts and assistants to speed up development and testing.</p>
+              <div class="project__meta">
+                <span class="chip">Python</span>
+                <span class="chip">CLI</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn--text" href="#">Docs</a>
+                <a class="btn btn--text" href="#">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="chips" data-reveal>
+            <span class="chip chip--elevated">JavaScript</span>
+            <span class="chip chip--elevated">TypeScript</span>
+            <span class="chip chip--elevated">React</span>
+            <span class="chip chip--elevated">Node.js</span>
+            <span class="chip chip--elevated">Python</span>
+            <span class="chip chip--elevated">SQL</span>
+            <span class="chip chip--elevated">CSS</span>
+            <span class="chip chip--elevated">Accessibility</span>
+            <span class="chip chip--elevated">Performance</span>
+            <span class="chip chip--elevated">Testing</span>
+            <span class="chip chip--elevated">CI/CD</span>
+            <span class="chip chip--elevated">Cloud</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container grid grid-2">
+          <div class="card" data-reveal>
+            <h2>Contact</h2>
+            <p>Have a question or want to work together? Send a message and I’ll get back to you.</p>
+            <form class="form" action="https://formspree.io/f/{your-id}" method="POST">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">Send</button>
+            </form>
+          </div>
+          <aside class="card" data-reveal>
+            <h3>Availability</h3>
+            <p>Open to full‑time roles, freelance projects, and collaborations.</p>
+            <h3>Location</h3>
+            <p>Remote • Global</p>
+            <h3>Elsewhere</h3>
+            <ul class="list">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Email</a></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <small>© <span id="year"></span> Habibur Rahman. All rights reserved.</small>
+        <div class="footer__controls">
+          <label class="switch">
+            <input type="checkbox" id="reduceMotionToggle" />
+            <span>Reduce motion</span>
+          </label>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js').catch(() => {}));
+      }
+    </script>
+    <script src="assets/js/app.js" type="module"></script>
+  </body>
+  </html>
