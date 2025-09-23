@@ -250,3 +250,23 @@ function initContactForm() {
 
 // init
 initContactForm();
+
+// Email obfuscation: bind click to elements with .email-link and construct mailto at runtime
+(function initEmailLinks(){
+  const user = 'habibmukhlis2006';
+  const domain = 'gmail.com';
+  const subject = encodeURIComponent('Portfolio inquiry');
+  const body = encodeURIComponent("Hi Habibur,\n\nI'd like to connect about...");
+  const href = `mailto:${user}@${domain}?subject=${subject}&body=${body}`;
+  $$('.email-link').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = href;
+    });
+  });
+})();
+
+// Move SW registration here to avoid inline script
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js').catch(() => {}));
+}
