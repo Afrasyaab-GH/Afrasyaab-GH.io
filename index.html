@@ -65,6 +65,7 @@
               <a class="btn btn--primary" href="#projects" data-i18n="hero.ctaProjects">View Projects</a>
               <a class="btn btn--tonal" href="#contact" data-i18n="hero.ctaContact">Contact Me</a>
               <a class="btn" href="https://www.fiverr.com/s/Ayg8WjX" target="_blank" rel="noopener" data-i18n="hero.ctaFiverr">Hire me on Fiverr</a>
+              <a class="btn btn--primary" href="mailto:habibmukhlis2006@gmail.com?subject=Portfolio%20inquiry&body=Hi%20Habibur%2C%0A%0AI%27d%20like%20to%20connect%20about..." data-i18n="hero.ctaEmail">Email me</a>
             </div>
             <div class="quick-meta">
               <span class="chip" data-i18n="hero.meta1">Frontend • Backend • Cloud</span>
@@ -225,7 +226,11 @@
           <div class="card" data-reveal>
             <h2 data-i18n="section.contact.title">Contact</h2>
             <p data-i18n="contact.p1">Have a question or want to work together? Send a message and I’ll get back to you.</p>
-            <form class="form" action="https://formspree.io/f/{your-id}" method="POST">
+            <div class="actions" style="margin:.5rem 0 1rem; gap:.6rem">
+              <a class="btn btn--primary" href="mailto:habibmukhlis2006@gmail.com?subject=Portfolio%20inquiry&body=Hi%20Habibur%2C%0A%0AI%27d%20like%20to%20connect%20about..." data-i18n="contact.btnEmail">Email me</a>
+              <a class="btn" href="https://www.fiverr.com/s/Ayg8WjX" target="_blank" rel="noopener" data-i18n="contact.btnFiverr">Hire on Fiverr</a>
+            </div>
+            <form class="form" action="https://formspree.io/f/mnngqqkw" method="POST" id="contactForm" novalidate>
               <div class="field">
                 <label for="name" data-i18n="contact.labelName">Name</label>
                 <input id="name" name="name" type="text" required placeholder="Your name" data-i18n-placeholder="contact.phName" />
@@ -238,6 +243,7 @@
                 <label for="message" data-i18n="contact.labelMessage">Message</label>
                 <textarea id="message" name="message" rows="5" required placeholder="How can I help?" data-i18n-placeholder="contact.phMessage"></textarea>
               </div>
+              <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
               <button class="btn btn--primary" type="submit" data-i18n="contact.btnSend">Send</button>
             </form>
           </div>

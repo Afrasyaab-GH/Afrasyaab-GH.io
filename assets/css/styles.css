@@ -164,6 +164,10 @@ a:hover { text-decoration: underline; }
 .field { display: grid; gap: .35rem; }
 .field input, .field textarea { border: 1px solid hsl(var(--border)); background: hsl(var(--surface)); color: hsl(var(--text)); border-radius: 14px; padding: .8rem 1rem; box-shadow: var(--shadow-1) inset; }
 .field input:focus, .field textarea:focus { outline: 2px solid hsl(var(--brand) / .35); outline-offset: 2px; }
+.form__status { font-size: var(--size-0); padding: .6rem .8rem; border-radius: 12px; background: hsl(var(--overlay)); color: hsl(var(--text)); border: 1px solid hsl(var(--border)); display: none; }
+.form__status--success, .form__status--error { display: block; }
+.form__status--success { background: hsl(var(--success) / .1); color: hsl(var(--success)); border-color: hsl(var(--success) / .35); }
+.form__status--error { background: hsl(var(--danger) / .1); color: hsl(var(--danger)); border-color: hsl(var(--danger) / .35); }
 
 /* Footer */
 .footer { border-top: 1px solid hsl(var(--border)); background: hsl(var(--surface) / .8); backdrop-filter: blur(8px); }

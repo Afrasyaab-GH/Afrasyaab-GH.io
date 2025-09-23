@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "git-stage-commit-push",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"git add -A; git commit -m \"feat(contact): wire Formspree endpoint, promote email CTA buttons, i18n preserved\"; git push origin main"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

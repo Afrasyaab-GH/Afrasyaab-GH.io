@@ -121,7 +121,7 @@ const dict = {
   en: {
     skip: 'Skip to content',
     nav: { about: 'About', experience: 'Experience', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
-  hero: { hello: 'Hello, I’m', lead: 'Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.', ctaProjects: 'View Projects', ctaContact: 'Contact Me', ctaFiverr: 'Hire me on Fiverr', meta1: 'Frontend • Backend • Cloud', meta2: 'Open Source' },
+  hero: { hello: 'Hello, I’m', lead: 'Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.', ctaProjects: 'View Projects', ctaContact: 'Contact Me', ctaFiverr: 'Hire me on Fiverr', ctaEmail: 'Email me', meta1: 'Frontend • Backend • Cloud', meta2: 'Open Source' },
     section: { about: { title: 'About' }, experience: { title: 'Experience' }, projects: { title: 'Featured Projects' }, skills: { title: 'Skills' }, contact: { title: 'Contact' } },
   about: { intro: 'I’m a developer specializing in AI‑assisted development. I create:', li1: 'Cross‑platform Flutter apps (iOS, Android, Web, Desktop)', li2: 'Responsive modern websites and static web apps', li3: 'Professional browser extensions', li4: '2D games with Python/Pygame', li5: '2D & 3D browser games with HTML5 + Phaser/Three', outro: 'I combine AI tools with coding to deliver projects faster, cleaner, and fully customized to your needs.' },
     exp1: { title: 'Senior Software Engineer · Company', date: '2023 — Present', b1: 'Lead development of design system components with accessibility at core.', b2: 'Improved performance metrics (LCP/CLS) by 30% with modern patterns.' },
@@ -130,13 +130,13 @@ const dict = {
     proj2: { desc: 'Composable components with Material/One UI aesthetics, fully accessible.' },
     proj3: { desc: 'Automation scripts and assistants to speed up development and testing.' },
     btn: { demo: 'Demo', docs: 'Docs', code: 'Code' },
-    contact: { p1: 'Have a question or want to work together? Send a message and I’ll get back to you.', labelName: 'Name', phName: 'Your name', labelEmail: 'Email', phEmail: 'you@example.com', labelMessage: 'Message', phMessage: 'How can I help?', btnSend: 'Send', availability: 'Availability', availabilityText: 'Open to full‑time roles, freelance projects, and collaborations.', location: 'Location', locationText: 'Remote • Global', elsewhere: 'Elsewhere' },
+  contact: { p1: 'Have a question or want to work together? Send a message and I’ll get back to you.', labelName: 'Name', phName: 'Your name', labelEmail: 'Email', phEmail: 'you@example.com', labelMessage: 'Message', phMessage: 'How can I help?', btnSend: 'Send', btnEmail: 'Email me', btnFiverr: 'Hire on Fiverr', success: 'Thanks! Your message was sent.', error: 'Sorry, something went wrong. Please try again or email me directly.', availability: 'Availability', availabilityText: 'Open to full‑time roles, freelance projects, and collaborations.', location: 'Location', locationText: 'Remote • Global', elsewhere: 'Elsewhere' },
     footer: { rights: 'All rights reserved.', reduceMotion: 'Reduce motion' }
   },
   ps: {
     skip: 'مينځپانګې ته ولاړ شئ',
     nav: { about: 'زما په اړه', experience: 'تجربه', projects: 'پروژې', skills: 'مهارتونه', contact: 'اړيکه' },
-  hero: { hello: 'سلام، زه يم', lead: 'د لاسرسي، کړنې او ښکلي ډيزاين سره عصري ويب تجربې جوړوم.', ctaProjects: 'پروژې وګورئ', ctaContact: 'اړیکه راسره ونیسئ', ctaFiverr: 'پر فایور استخدام مې کړئ', meta1: 'فرنټ اينډ • بॅک اينډ • کلاوډ', meta2: 'اوپن سورس' },
+  hero: { hello: 'سلام، زه يم', lead: 'د لاسرسي، کړنې او ښکلي ډيزاين سره عصري ويب تجربې جوړوم.', ctaProjects: 'پروژې وګورئ', ctaContact: 'اړیکه راسره ونیسئ', ctaFiverr: 'پر فایور استخدام مې کړئ', ctaEmail: 'بریښنالیک واستوئ', meta1: 'فرنټ اينډ • بॅک اينډ • کلاوډ', meta2: 'اوپن سورس' },
     section: { about: { title: 'زما په اړه' }, experience: { title: 'تجربه' }, projects: { title: 'ځانګړې پروژې' }, skills: { title: 'مهارتونه' }, contact: { title: 'اړيکه' } },
   about: { intro: 'زه د AI-مرسته شوې پرمختيا کې تخصص لرم. زه جوړوم:', li1: 'د فلټر کراس-پليټفارم اپونه (iOS، Android، ويب، ډيسکټاپ)', li2: 'عصري ځواب ویونکي وېبسايټونه او سټېټيک وېب اپونه', li3: 'مسلکي براوزر توسيعات', li4: '۲D لوبې د Python/Pygame سره', li5: '۲D او ۳D براوزر لوبې د HTML5 + Phaser/Three سره', outro: 'زه د AI وسايلو او کود ګډ کاروم څو پروژې ژر، پاکې او ستاسو اړتیاوو ته سمې وسپارم.' },
     exp1: { title: 'د سينيور سافټویر انجینر · شرکت', date: '۲۰۲۳ — تر اوسه', b1: 'د لاسرسي په پام کې نیولو سره د ډيزاين سيستم برخې رهبري کړې.', b2: 'د کړنې شاخصونه ۳۰٪ ښه کړل.' },
@@ -145,13 +145,13 @@ const dict = {
     proj2: { desc: 'د موادو/ون UI ښکلا سره د لاسرسي وړ جوړه کېدونکي برخې.' },
     proj3: { desc: 'د پرمختګ ګړندي کولو لپاره اتومات او مرستندويه وسيلې.' },
     btn: { demo: 'ډيمو', docs: 'لاسوندونه', code: 'کوډ' },
-    contact: { p1: 'پوښتنه لرئ؟ پيغام پرېږدئ، ژر ځواب درکوم.', labelName: 'نوم', phName: 'ستاسو نوم', labelEmail: 'برېښنالیک', phEmail: 'you@example.com', labelMessage: 'پيغام', phMessage: 'څنګه مرسته وکړم؟', btnSend: 'لېږل', availability: 'شتون', availabilityText: 'د تمام وخت، فريلانس او همکارۍ لپاره چمتو.', location: 'ځای', locationText: 'لرې • نړيوال', elsewhere: 'بل ځای' },
+  contact: { p1: 'پوښتنه لرئ؟ پيغام پرېږدئ، ژر ځواب درکوم.', labelName: 'نوم', phName: 'ستاسو نوم', labelEmail: 'برېښنالیک', phEmail: 'you@example.com', labelMessage: 'پيغام', phMessage: 'څنګه مرسته وکړم؟', btnSend: 'لېږل', btnEmail: 'بریښنالیک', btnFiverr: 'په فایور وګومارئ', success: 'مننه! ستاسو پیغام واستول شو.', error: 'بخښنه، ستونزه رامنځته شوه. مهرباني وکړئ بیا هڅه وکړئ یا مستقیم بریښنالیک واستوئ.', availability: 'شتون', availabilityText: 'د تمام وخت، فريلانس او همکارۍ لپاره چمتو.', location: 'ځای', locationText: 'لرې • نړيوال', elsewhere: 'بل ځای' },
     footer: { rights: 'ټولې حقوق خوندي دي.', reduceMotion: 'خوځښت کم کړئ' }
   },
   fa: {
     skip: 'پرش به محتوا',
     nav: { about: 'درباره من', experience: 'تجربه', projects: 'پروژه‌ها', skills: 'مهارت‌ها', contact: 'ارتباط' },
-  hero: { hello: 'سلام، من', lead: 'تجربه‌های وب مدرن با دسترس‌پذیری و عملکرد بالا می‌سازم.', ctaProjects: 'مشاهده پروژه‌ها', ctaContact: 'تماس با من', ctaFiverr: 'در Fiverr من را استخدام کنید', meta1: 'فرانت‌اند • بک‌اند • کلود', meta2: 'متن‌باز' },
+  hero: { hello: 'سلام، من', lead: 'تجربه‌های وب مدرن با دسترس‌پذیری و عملکرد بالا می‌سازم.', ctaProjects: 'مشاهده پروژه‌ها', ctaContact: 'تماس با من', ctaFiverr: 'در Fiverr من را استخدام کنید', ctaEmail: 'ارسال ایمیل', meta1: 'فرانت‌اند • بک‌اند • کلود', meta2: 'متن‌باز' },
     section: { about: { title: 'درباره' }, experience: { title: 'تجربه' }, projects: { title: 'پروژه‌های ویژه' }, skills: { title: 'مهارت‌ها' }, contact: { title: 'ارتباط' } },
   about: { intro: 'من توسعه‌دهنده‌ای با تمرکز بر توسعه یاری‌شده با هوش مصنوعی هستم. من می‌سازم:', li1: 'اپ‌های کراس‌پلتفرم فلاتر (iOS، اندروید، وب، دسکتاپ)', li2: 'وب‌سایت‌های مدرن واکنش‌گرا و برنامه‌های وب استاتیک', li3: 'افزونه‌های حرفه‌ای مرورگر', li4: 'بازی‌های دوبعدی با Python/Pygame', li5: 'بازی‌های ۲بعدی و ۳بعدی مرورگر با HTML5 + Phaser/Three', outro: 'من ابزارهای هوش مصنوعی را با کدنویسی ترکیب می‌کنم تا پروژه‌ها را سریع‌تر، تمیزتر و کاملاً مطابق نیاز شما تحویل دهم.' },
     exp1: { title: 'مهندس ارشد نرم‌افزار · شرکت', date: '۲۰۲۳ — اکنون', b1: 'رهبری توسعه مؤلفه‌های سیستم طراحی با تمرکز بر دسترس‌پذیری.', b2: 'بهبود معیارهای عملکردی تا ۳۰٪.' },
@@ -160,7 +160,7 @@ const dict = {
     proj2: { desc: 'کیت سیستم طراحی با زیبایی متریال/وان UI، کاملاً قابل دسترس.' },
     proj3: { desc: 'ابزارهای هوشمند برای تسریع توسعه و آزمایش.' },
     btn: { demo: 'دمو', docs: 'مستندات', code: 'کد' },
-    contact: { p1: 'سوالی دارید یا می‌خواهید همکاری کنیم؟ پیام بگذارید تا پاسخ دهم.', labelName: 'نام', phName: 'نام شما', labelEmail: 'ایمیل', phEmail: 'you@example.com', labelMessage: 'پیام', phMessage: 'چطور کمک کنم؟', btnSend: 'ارسال', availability: 'دسترس‌پذیری', availabilityText: 'آماده برای تمام‌وقت، فریلنس و همکاری.', location: 'موقعیت', locationText: 'دورکاری • جهانی', elsewhere: 'سایر' },
+  contact: { p1: 'سوالی دارید یا می‌خواهید همکاری کنیم؟ پیام بگذارید تا پاسخ دهم.', labelName: 'نام', phName: 'نام شما', labelEmail: 'ایمیل', phEmail: 'you@example.com', labelMessage: 'پیام', phMessage: 'چطور کمک کنم؟', btnSend: 'ارسال', btnEmail: 'ایمیل بدهید', btnFiverr: 'استخدام از فایور', success: 'ممنون! پیام شما ارسال شد.', error: 'متاسفیم، مشکلی پیش آمد. لطفا دوباره تلاش کنید یا مستقیم ایمیل بدهید.', availability: 'دسترس‌پذیری', availabilityText: 'آماده برای تمام‌وقت، فریلنس و همکاری.', location: 'موقعیت', locationText: 'دورکاری • جهانی', elsewhere: 'سایر' },
     footer: { rights: 'کلیه حقوق محفوظ است.', reduceMotion: 'کاهش پویانمایی' }
   }
 };
@@ -190,6 +190,13 @@ function getLang() {
   return localStorage.getItem(langKey) || (navigator.language || 'en').slice(0,2);
 }
 
+// tiny translator helper
+function t(key, lang = getLang()) {
+  try {
+    return key.split('.').reduce((acc, k) => (acc ? acc[k] : undefined), dict[lang]);
+  } catch(_) { return undefined; }
+}
+
 // Initialize language
 let detected = getLang();
 if (!['en','ps','fa'].includes(detected)) {
@@ -210,3 +217,36 @@ if (langSelect) {
     langSelect.value = value;
   });
 }
+
+// Contact form (Formspree)
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const status = document.getElementById('formStatus');
+  // Use endpoint from form action
+  const endpoint = form.getAttribute('action');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (status) { status.textContent = ''; status.className = 'form__status'; }
+    const btn = form.querySelector('button[type="submit"]');
+    const prev = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = (t('section.contact.title') ? t('contact.btnSend') : 'Send') + '…'; }
+    try {
+      const data = new FormData(form);
+      const res = await fetch(endpoint, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+      if (res.ok) {
+        form.reset();
+        if (status) { status.className = 'form__status form__status--success'; status.textContent = t('contact.success') || 'Thanks! Your message was sent.'; }
+      } else {
+        if (status) { status.className = 'form__status form__status--error'; status.textContent = t('contact.error') || 'Sorry, something went wrong. Please try again or email me directly.'; }
+      }
+    } catch (err) {
+      if (status) { status.className = 'form__status form__status--error'; status.textContent = t('contact.error') || 'Sorry, something went wrong. Please try again or email me directly.'; }
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = prev; }
+    }
+  });
+}
+
+// init
+initContactForm();
