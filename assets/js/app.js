@@ -121,7 +121,7 @@ const dict = {
   en: {
     skip: 'Skip to content',
     nav: { about: 'About', experience: 'Experience', projects: 'Projects', skills: 'Skills', contact: 'Contact' },
-  hero: { hello: 'Hello, I’m', lead: 'Building thoughtful, accessible, and performant web experiences. Modern UI with Material + One UI vibes.', ctaProjects: 'View Projects', ctaContact: 'Contact Me', ctaFiverr: 'Hire me on Fiverr', ctaEmail: 'Email me', meta1: 'Frontend • Backend • Cloud', meta2: 'Open Source' },
+  hero: { hello: 'Hello, I’m', lead: 'AI‑assisted developer crafting Flutter apps, modern websites, browser extensions, and 2D/3D games.', ctaProjects: 'View Projects', ctaContact: 'Contact Me', ctaFiverr: 'Hire me on Fiverr', ctaEmail: 'Email me', meta1: 'Flutter • Web • Extensions • Games', meta2: 'AI‑assisted' },
     section: { about: { title: 'About' }, experience: { title: 'Experience' }, projects: { title: 'Featured Projects' }, skills: { title: 'Skills' }, contact: { title: 'Contact' } },
   about: { intro: 'I’m a developer specializing in AI‑assisted development. I create:', li1: 'Cross‑platform Flutter apps (iOS, Android, Web, Desktop)', li2: 'Responsive modern websites and static web apps', li3: 'Professional browser extensions', li4: '2D games with Python/Pygame', li5: '2D & 3D browser games with HTML5 + Phaser/Three', outro: 'I combine AI tools with coding to deliver projects faster, cleaner, and fully customized to your needs.' },
     exp1: { title: 'Senior Software Engineer · Company', date: '2023 — Present', b1: 'Lead development of design system components with accessibility at core.', b2: 'Improved performance metrics (LCP/CLS) by 30% with modern patterns.' },
@@ -136,7 +136,7 @@ const dict = {
   ps: {
     skip: 'مينځپانګې ته ولاړ شئ',
     nav: { about: 'زما په اړه', experience: 'تجربه', projects: 'پروژې', skills: 'مهارتونه', contact: 'اړيکه' },
-  hero: { hello: 'سلام، زه يم', lead: 'د لاسرسي، کړنې او ښکلي ډيزاين سره عصري ويب تجربې جوړوم.', ctaProjects: 'پروژې وګورئ', ctaContact: 'اړیکه راسره ونیسئ', ctaFiverr: 'پر فایور استخدام مې کړئ', ctaEmail: 'بریښنالیک واستوئ', meta1: 'فرنټ اينډ • بॅک اينډ • کلاوډ', meta2: 'اوپن سورس' },
+  hero: { hello: 'سلام، زه يم', lead: 'د AI په مرسته د فلاتر اپونو، عصري وېبسايټونو، براوزر توسيعاتو او 2D/3D لوبو جوړوونکی.', ctaProjects: 'پروژې وګورئ', ctaContact: 'اړیکه راسره ونیسئ', ctaFiverr: 'پر فایور استخدام مې کړئ', ctaEmail: 'بریښنالیک واستوئ', meta1: 'فلاتر • وېب • توسيعات • لوبې', meta2: 'AI-مرسته' },
     section: { about: { title: 'زما په اړه' }, experience: { title: 'تجربه' }, projects: { title: 'ځانګړې پروژې' }, skills: { title: 'مهارتونه' }, contact: { title: 'اړيکه' } },
   about: { intro: 'زه د AI-مرسته شوې پرمختيا کې تخصص لرم. زه جوړوم:', li1: 'د فلټر کراس-پليټفارم اپونه (iOS، Android، ويب، ډيسکټاپ)', li2: 'عصري ځواب ویونکي وېبسايټونه او سټېټيک وېب اپونه', li3: 'مسلکي براوزر توسيعات', li4: '۲D لوبې د Python/Pygame سره', li5: '۲D او ۳D براوزر لوبې د HTML5 + Phaser/Three سره', outro: 'زه د AI وسايلو او کود ګډ کاروم څو پروژې ژر، پاکې او ستاسو اړتیاوو ته سمې وسپارم.' },
     exp1: { title: 'د سينيور سافټویر انجینر · شرکت', date: '۲۰۲۳ — تر اوسه', b1: 'د لاسرسي په پام کې نیولو سره د ډيزاين سيستم برخې رهبري کړې.', b2: 'د کړنې شاخصونه ۳۰٪ ښه کړل.' },
@@ -151,7 +151,7 @@ const dict = {
   fa: {
     skip: 'پرش به محتوا',
     nav: { about: 'درباره من', experience: 'تجربه', projects: 'پروژه‌ها', skills: 'مهارت‌ها', contact: 'ارتباط' },
-  hero: { hello: 'سلام، من', lead: 'تجربه‌های وب مدرن با دسترس‌پذیری و عملکرد بالا می‌سازم.', ctaProjects: 'مشاهده پروژه‌ها', ctaContact: 'تماس با من', ctaFiverr: 'در Fiverr من را استخدام کنید', ctaEmail: 'ارسال ایمیل', meta1: 'فرانت‌اند • بک‌اند • کلود', meta2: 'متن‌باز' },
+  hero: { hello: 'سلام، من', lead: 'توسعه‌دهندهٔ یاری‌شده با هوش مصنوعی برای ساخت اپ‌های فلاتر، وب‌سایت‌های مدرن، افزونه‌های مرورگر و بازی‌های ۲بعدی/۳بعدی.', ctaProjects: 'مشاهده پروژه‌ها', ctaContact: 'تماس با من', ctaFiverr: 'در Fiverr من را استخدام کنید', ctaEmail: 'ارسال ایمیل', meta1: 'فلاتر • وب • افزونه‌ها • بازی', meta2: 'یاری‌شده با هوش مصنوعی' },
     section: { about: { title: 'درباره' }, experience: { title: 'تجربه' }, projects: { title: 'پروژه‌های ویژه' }, skills: { title: 'مهارت‌ها' }, contact: { title: 'ارتباط' } },
   about: { intro: 'من توسعه‌دهنده‌ای با تمرکز بر توسعه یاری‌شده با هوش مصنوعی هستم. من می‌سازم:', li1: 'اپ‌های کراس‌پلتفرم فلاتر (iOS، اندروید، وب، دسکتاپ)', li2: 'وب‌سایت‌های مدرن واکنش‌گرا و برنامه‌های وب استاتیک', li3: 'افزونه‌های حرفه‌ای مرورگر', li4: 'بازی‌های دوبعدی با Python/Pygame', li5: 'بازی‌های ۲بعدی و ۳بعدی مرورگر با HTML5 + Phaser/Three', outro: 'من ابزارهای هوش مصنوعی را با کدنویسی ترکیب می‌کنم تا پروژه‌ها را سریع‌تر، تمیزتر و کاملاً مطابق نیاز شما تحویل دهم.' },
     exp1: { title: 'مهندس ارشد نرم‌افزار · شرکت', date: '۲۰۲۳ — اکنون', b1: 'رهبری توسعه مؤلفه‌های سیستم طراحی با تمرکز بر دسترس‌پذیری.', b2: 'بهبود معیارهای عملکردی تا ۳۰٪.' },
