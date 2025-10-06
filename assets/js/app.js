@@ -128,8 +128,9 @@ const dict = {
     exp2: { title: 'Full‑Stack Engineer · Startup', date: '2021 — 2023', b1: 'Shipped features end‑to‑end across web and cloud services.', b2: 'Owned CI/CD and observability improvements.' },
     proj1: { desc: 'A multilingual programming language supporting English, Pashto, and Dari with human-friendly syntax. Features Rust-powered runtime and bytecode compiler.' },
     proj2: { desc: 'Developer toolkit and package manager for PohLang. Build, run, and manage PohLang projects with language-independent CLI commands. Python 3.9-3.12 compatible.' },
-    proj3: { desc: 'Modern, accessible portfolio with Material Design aesthetics. Features multilingual support (EN/PS/FA), dark mode, dynamic theming, and PWA capabilities.' },
-    btn: { demo: 'Demo', docs: 'Docs', code: 'Code' },
+    proj3: { desc: 'VS Code extension providing syntax highlighting, code snippets, and language support for PohLang. Enhances the development experience with IntelliSense and integrated tools.' },
+    proj4: { desc: 'Modern, accessible portfolio with Material Design aesthetics. Features multilingual support (EN/PS/FA), dark mode, dynamic theming, and PWA capabilities.' },
+    btn: { demo: 'Demo', docs: 'Docs', code: 'Code', install: 'Install' },
   contact: { p1: 'Have a question or want to work together? Send a message and I’ll get back to you.', labelName: 'Name', phName: 'Your name', labelEmail: 'Email', phEmail: 'you@example.com', labelMessage: 'Message', phMessage: 'How can I help?', btnSend: 'Send', btnEmail: 'Email me', btnFiverr: 'Hire on Fiverr', success: 'Thanks! Your message was sent.', error: 'Sorry, something went wrong. Please try again or email me directly.', availability: 'Availability', availabilityText: 'Open to full‑time roles, freelance projects, and collaborations.', location: 'Location', locationText: 'Remote • Global', elsewhere: 'Elsewhere' },
     footer: { rights: 'All rights reserved.', reduceMotion: 'Reduce motion' }
   },
@@ -143,8 +144,9 @@ const dict = {
     exp2: { title: 'فول سټک انجینر · سټارټ اپ', date: '۲۰۲۱ — ۲۰۲۳', b1: 'له پای څخه تر پای پورې بڼې وړاندې کړې.', b2: 'CI/CD او څارنې ته وده ورکړه.' },
     proj1: { desc: 'کثيرالژبي برنامه لیکنې ژبه چې انګریزي، پښتو او دري ملاتړ کوي د انساني دوستانه نحوي سره. د Rust پر بنسټ رن‌ټایم او بایت‌کوډ کمپایلر لري.' },
     proj2: { desc: 'د PohLang لپاره د پراختیا کونکي وسیلې او کڅوړې مدیر. د PohLang پروژې د ژبې څخه خپلواک CLI امرونو سره جوړوئ، چلوئ او اداره کوئ. د Python 3.9-3.12 سره مطابقت لري.' },
-    proj3: { desc: 'عصري او د لاسرسي وړ پورټفولیو د Material Design ښکلاوو سره. د کثیرالژبي ملاتړ (EN/PS/FA)، تیاره حالت، متحرک رنګوالی او PWA وړتیاوې لري.' },
-    btn: { demo: 'ډيمو', docs: 'لاسوندونه', code: 'کوډ' },
+    proj3: { desc: 'د VS Code توسيعه چې د PohLang لپاره د نحو روښانتيا، کوډ ټوټې او ژبې ملاتړ چمتو کوي. د IntelliSense او مدغم شوي وسيلو سره پرمختګ تجربه ښه کوي.' },
+    proj4: { desc: 'عصري او د لاسرسي وړ پورټفولیو د Material Design ښکلاوو سره. د کثیرالژبي ملاتړ (EN/PS/FA)، تیاره حالت، متحرک رنګوالی او PWA وړتیاوې لري.' },
+    btn: { demo: 'ډيمو', docs: 'لاسوندونه', code: 'کوډ', install: 'نصبول' },
   contact: { p1: 'پوښتنه لرئ؟ پيغام پرېږدئ، ژر ځواب درکوم.', labelName: 'نوم', phName: 'ستاسو نوم', labelEmail: 'برېښنالیک', phEmail: 'you@example.com', labelMessage: 'پيغام', phMessage: 'څنګه مرسته وکړم؟', btnSend: 'لېږل', btnEmail: 'بریښنالیک', btnFiverr: 'په فایور وګومارئ', success: 'مننه! ستاسو پیغام واستول شو.', error: 'بخښنه، ستونزه رامنځته شوه. مهرباني وکړئ بیا هڅه وکړئ یا مستقیم بریښنالیک واستوئ.', availability: 'شتون', availabilityText: 'د تمام وخت، فريلانس او همکارۍ لپاره چمتو.', location: 'ځای', locationText: 'لرې • نړيوال', elsewhere: 'بل ځای' },
     footer: { rights: 'ټولې حقوق خوندي دي.', reduceMotion: 'خوځښت کم کړئ' }
   },
@@ -158,8 +160,9 @@ const dict = {
     exp2: { title: 'مهندس فول‌استک · استارتاپ', date: '۲۰۲۱ — ۲۰۲۳', b1: 'عرضه قابلیت‌ها از ابتدا تا انتها.', b2: 'بهبود CI/CD و مشاهده‌پذیری.' },
     proj1: { desc: 'یک زبان برنامه‌نویسی چندزبانه با پشتیبانی از انگلیسی، پشتو و دری با نحو انسان‌محور. دارای رانتایم Rust و کامپایلر بایت‌کد.' },
     proj2: { desc: 'ابزار توسعه‌دهنده و مدیر بسته برای PohLang. ساخت، اجرا و مدیریت پروژه‌های PohLang با دستورات CLI مستقل از زبان. سازگار با Python 3.9-3.12.' },
-    proj3: { desc: 'پورتفولیوی مدرن و قابل دسترس با زیبایی‌شناسی Material Design. پشتیبانی چندزبانه (EN/PS/FA)، حالت تاریک، تم پویا و قابلیت‌های PWA.' },
-    btn: { demo: 'دمو', docs: 'مستندات', code: 'کد' },
+    proj3: { desc: 'افزونه VS Code که برجسته‌سازی نحو، قطعات کد و پشتیبانی زبان برای PohLang فراهم می‌کند. تجربه توسعه را با IntelliSense و ابزارهای یکپارچه بهبود می‌بخشد.' },
+    proj4: { desc: 'پورتفولیوی مدرن و قابل دسترس با زیبایی‌شناسی Material Design. پشتیبانی چندزبانه (EN/PS/FA)، حالت تاریک، تم پویا و قابلیت‌های PWA.' },
+    btn: { demo: 'دمو', docs: 'مستندات', code: 'کد', install: 'نصب' },
   contact: { p1: 'سوالی دارید یا می‌خواهید همکاری کنیم؟ پیام بگذارید تا پاسخ دهم.', labelName: 'نام', phName: 'نام شما', labelEmail: 'ایمیل', phEmail: 'you@example.com', labelMessage: 'پیام', phMessage: 'چطور کمک کنم؟', btnSend: 'ارسال', btnEmail: 'ایمیل بدهید', btnFiverr: 'استخدام از فایور', success: 'ممنون! پیام شما ارسال شد.', error: 'متاسفیم، مشکلی پیش آمد. لطفا دوباره تلاش کنید یا مستقیم ایمیل بدهید.', availability: 'دسترس‌پذیری', availabilityText: 'آماده برای تمام‌وقت، فریلنس و همکاری.', location: 'موقعیت', locationText: 'دورکاری • جهانی', elsewhere: 'سایر' },
     footer: { rights: 'کلیه حقوق محفوظ است.', reduceMotion: 'کاهش پویانمایی' }
   }
