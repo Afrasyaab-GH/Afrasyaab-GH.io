@@ -131,7 +131,7 @@ const dict = {
     proj2: { desc: 'Official development environment for PohLang with language-independent commands, build automation, test automation, hot reload, and professional project templates. Like Flutter is to Dart.' },
     proj3: { desc: 'Full IDE experience with syntax highlighting, IntelliSense, 40+ code snippets, bundled runtime, and one-click execution. No separate download needed—everything in one place.' },
     proj4: { desc: 'Modern, accessible portfolio with Material Design aesthetics. Features multilingual support (EN/PS/FA), dark mode, dynamic theming, and PWA capabilities.' },
-    btn: { demo: 'Demo', docs: 'Docs', code: 'Code', install: 'Install' },
+    btn: { demo: 'Demo', docs: 'Docs', code: 'Code', install: 'Install', repo: 'Repo', readme: 'README', download: 'Download' },
   contact: { p1: 'Have a question or want to work together? Send a message and I’ll get back to you.', labelName: 'Name', phName: 'Your name', labelEmail: 'Email', phEmail: 'you@example.com', labelMessage: 'Message', phMessage: 'How can I help?', btnSend: 'Send', btnEmail: 'Email me', btnFiverr: 'Hire on Fiverr', success: 'Thanks! Your message was sent.', error: 'Sorry, something went wrong. Please try again or email me directly.', availability: 'Availability', availabilityText: 'Open to full‑time roles, freelance projects, and collaborations.', location: 'Location', locationText: 'Remote • Global', elsewhere: 'Elsewhere' },
     footer: { rights: 'All rights reserved.', reduceMotion: 'Reduce motion' }
   },
@@ -148,7 +148,7 @@ const dict = {
     proj2: { desc: 'د PohLang لپاره رسمي پراختیایی چاپیریال د ژبې څخه خپلواک امرونو، جوړولو اتومات، ازموینې اتومات، ګرم بیا لوډ او مسلکي پروژې کینډۍ سره. لکه Flutter چې د Dart لپاره دی.' },
     proj3: { desc: 'بشپړه IDE تجربه د نحو روښانتیا، IntelliSense، ۴۰+ کوډ ټوټې، یوځای شوی رن‌ټایم او یو کلیک اجرا سره. جلا ډاونلوډ ته اړتیا نشته - هر څه په یو ځای.' },
     proj4: { desc: 'عصري او د لاسرسي وړ پورټفولیو د Material Design ښکلاوو سره. د کثیرالژبي ملاتړ (EN/PS/FA)، تیاره حالت، متحرک رنګوالی او PWA وړتیاوې لري.' },
-    btn: { demo: 'ډيمو', docs: 'لاسوندونه', code: 'کوډ', install: 'نصبول' },
+    btn: { demo: 'ډيمو', docs: 'لاسوندونه', code: 'کوډ', install: 'نصبول', repo: 'ذخیره', readme: 'README', download: 'ډاونلوډ' },
   contact: { p1: 'پوښتنه لرئ؟ پيغام پرېږدئ، ژر ځواب درکوم.', labelName: 'نوم', phName: 'ستاسو نوم', labelEmail: 'برېښنالیک', phEmail: 'you@example.com', labelMessage: 'پيغام', phMessage: 'څنګه مرسته وکړم؟', btnSend: 'لېږل', btnEmail: 'بریښنالیک', btnFiverr: 'په فایور وګومارئ', success: 'مننه! ستاسو پیغام واستول شو.', error: 'بخښنه، ستونزه رامنځته شوه. مهرباني وکړئ بیا هڅه وکړئ یا مستقیم بریښنالیک واستوئ.', availability: 'شتون', availabilityText: 'د تمام وخت، فريلانس او همکارۍ لپاره چمتو.', location: 'ځای', locationText: 'لرې • نړيوال', elsewhere: 'بل ځای' },
     footer: { rights: 'ټولې حقوق خوندي دي.', reduceMotion: 'خوځښت کم کړئ' }
   },
@@ -165,7 +165,7 @@ const dict = {
     proj2: { desc: 'محیط توسعه رسمی برای PohLang با دستورات مستقل از زبان، اتوماسیون ساخت، اتوماسیون تست، بارگذاری مجدد فوری و قالب‌های حرفه‌ای پروژه. مانند Flutter برای Dart.' },
     proj3: { desc: 'تجربه کامل IDE با برجسته‌سازی نحو، IntelliSense، ۴۰+ قطعه کد، رانتایم یکپارچه و اجرای یک کلیکی. نیاز به دانلود جداگانه ندارد—همه‌چیز در یک جا.' },
     proj4: { desc: 'پورتفولیوی مدرن و قابل دسترس با زیبایی‌شناسی Material Design. پشتیبانی چندزبانه (EN/PS/FA)، حالت تاریک، تم پویا و قابلیت‌های PWA.' },
-    btn: { demo: 'دمو', docs: 'مستندات', code: 'کد', install: 'نصب' },
+    btn: { demo: 'دمو', docs: 'مستندات', code: 'کد', install: 'نصب', repo: 'مخزن', readme: 'README', download: 'دانلود' },
   contact: { p1: 'سوالی دارید یا می‌خواهید همکاری کنیم؟ پیام بگذارید تا پاسخ دهم.', labelName: 'نام', phName: 'نام شما', labelEmail: 'ایمیل', phEmail: 'you@example.com', labelMessage: 'پیام', phMessage: 'چطور کمک کنم؟', btnSend: 'ارسال', btnEmail: 'ایمیل بدهید', btnFiverr: 'استخدام از فایور', success: 'ممنون! پیام شما ارسال شد.', error: 'متاسفیم، مشکلی پیش آمد. لطفا دوباره تلاش کنید یا مستقیم ایمیل بدهید.', availability: 'دسترس‌پذیری', availabilityText: 'آماده برای تمام‌وقت، فریلنس و همکاری.', location: 'موقعیت', locationText: 'دورکاری • جهانی', elsewhere: 'سایر' },
     footer: { rights: 'کلیه حقوق محفوظ است.', reduceMotion: 'کاهش پویانمایی' }
   }
