@@ -41,8 +41,8 @@ Steps (one-time):
 1. Push to `main` (already done)
 2. In GitHub → Settings → Pages → Build and deployment:
 	- Source: GitHub Actions
-3. Wait for the workflow to finish: https://github.com/HabiburRahman-GH/HabiburRahman-GH.io/actions/workflows/pages.yml
-4. Your site will be available at: https://habiburrahman-gh.github.io/HabiburRahman-GH.io/
+3. Wait for the workflow to finish: https://github.com/Afrasyaab-GH/Afrasyaab-GH.io/actions/workflows/pages.yml
+4. Your site will be available at: https://Afrasyaab-gh.github.io/Afrasyaab-GH.io/
 
 Tip: If you prefer the legacy option (Deploy from a branch), set Source: Branch → `main` → root, but the provided workflow is the recommended path.
 

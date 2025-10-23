@@ -29,8 +29,8 @@ Your portfolio has been updated to showcase your current projects!
 - **Description:** Modern, accessible portfolio with Material Design aesthetics. Features multilingual support (EN/PS/FA), dark mode, dynamic theming, and PWA capabilities.
 - **Tech Stack:** HTML5, CSS3, JavaScript, PWA
 - **Links:**
-  - Demo: https://habiburrahman-gh.io
-  - Code: https://github.com/HabiburRahman-GH/HabiburRahman-GH.io
+  - Demo: https://Afrasyaab-gh.io
+  - Code: https://github.com/Afrasyaab-GH/Afrasyaab-GH.io
 - **Replaced:** "AI Dev Tools" (placeholder)
 
 ---
@@ -90,7 +90,7 @@ The translations are integrated into the existing i18n system and will automatic
 
 1. **Test Locally:**
    ```bash
-   cd c:\Users\habib\HabiburRahman-GH.io
+   cd c:\Users\habib\Afrasyaab-GH.io
    # Open index.html in browser or use a local server
    python -m http.server 8000
    # Visit: http://localhost:8000
@@ -105,7 +105,7 @@ The translations are integrated into the existing i18n system and will automatic
 
 3. **Verify Deployment:**
    - GitHub Pages will automatically rebuild
-   - Visit: https://habiburrahman-gh.io
+   - Visit: https://Afrasyaab-gh.io
    - Test all 3 languages (EN/PS/FA)
    - Test project links
 
@@ -164,7 +164,7 @@ The translations are integrated into the existing i18n system and will automatic
 
 ## 🔗 Quick Links
 
-- **Portfolio:** https://habiburrahman-gh.io
+- **Portfolio:** https://Afrasyaab-gh.io
 - **PohLang Repo:** https://github.com/AlhaqGH/PohLang
 - **PLHub Repo:** https://github.com/AlhaqGH/PLHub
 - **PLHub Latest Release:** https://github.com/AlhaqGH/PLHub/releases/tag/v0.5.1
