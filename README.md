@@ -1,4 +1,4 @@
-# HabiburRahman Mukhlis — Portfolio
+# Afrasyaab Meranai (HabiburRahman) — Portfolio
 
 Modern, fast, and responsive portfolio with a Material + Samsung One UI inspired design. Ships with theming, small animations, and PWA basics.
 
