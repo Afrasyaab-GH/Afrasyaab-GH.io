@@ -1,4 +1,4 @@
-const CACHE = 'hr-portfolio-v10-syntax-fix';
+const CACHE = 'hr-portfolio-v11-card-layout';
 const ASSETS = [
   './',
   './index.html',

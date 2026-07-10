@@ -265,7 +265,8 @@ h1, h2, h3, h4, .display {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 4rem;
+  gap: 3rem;
+  align-items: start; /* Cards size to their own content, no row-stretch */
 }
 /* Staggering effect */
 .project-grid > article:nth-child(even) {
@@ -275,19 +276,22 @@ h1, h2, h3, h4, .display {
   display: flex;
   flex-direction: column;
   background: hsl(var(--surface));
-  padding: 0px;
-  box-shadow: none;
-  border: none;
+  padding: 1.5rem; /* Restore inner breathing room on all sides */
+  box-shadow: var(--shadow-2);
+  border: 1px solid hsla(var(--outline-variant) / 0.15);
+  border-radius: var(--radius-lg);
+  transition: background-color 0.25s var(--ease-editorial), transform 0.3s var(--ease-editorial), box-shadow 0.3s var(--ease-editorial);
 }
 .project:hover {
   transform: translateY(-4px);
+  box-shadow: var(--shadow-3);
 }
 .project__thumb {
   height: 180px;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
   background: hsl(var(--overlay));
   border: 1px solid hsla(var(--outline-variant) / 0.15);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,8 +313,8 @@ h1, h2, h3, h4, .display {
   transform: scale(1.05);
 }
 .project h3 { font-size: 1.5rem; margin: 0 0 0.5rem; font-family: var(--font-serif); }
-.project p { font-size: 0.9rem; color: hsl(var(--text-2)); line-height: 1.72; margin: 0 0 1.2rem; }
-.project__meta { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: auto; margin-bottom: 1.2rem; }
+.project p { font-size: 0.9rem; color: hsl(var(--text-2)); line-height: 1.72; margin: 0 0 1rem; }
+.project__meta { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
 .project .actions { display: flex; gap: 1.2rem; }
 
 /* Chips */
@@ -342,7 +346,7 @@ h1, h2, h3, h4, .display {
 
 /* Responsive */
 @media (max-width: 960px) {
-  .project-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .project-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .project-grid > article:nth-child(even) { margin-top: 0px; }
   .hero__inner { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
   .hero .actions, .quick-meta { justify-content: center; }
