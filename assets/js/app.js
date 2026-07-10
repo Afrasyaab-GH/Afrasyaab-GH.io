@@ -74,47 +74,7 @@ if ('IntersectionObserver' in window) {
 // Year
 $('#year').textContent = String(new Date().getFullYear());
 
-// Accent from image using canvas and average color
-async function extractAverageColorFromImage(imgEl) {
-  await imgEl.decode().catch(() => {});
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d', { willReadFrequently: true });
-  const w = canvas.width = Math.min(192, imgEl.naturalWidth || 192);
-  const h = canvas.height = Math.min(192, imgEl.naturalHeight || 192);
-  ctx.drawImage(imgEl, 0, 0, w, h);
-  const { data } = ctx.getImageData(0, 0, w, h);
-  let r = 0, g = 0, b = 0, count = 0;
-  for (let i = 0; i < data.length; i += 4 * 8) { // sample every 8px
-    r += data[i]; g += data[i + 1]; b += data[i + 2]; count++;
-  }
-  r = Math.round(r / count); g = Math.round(g / count); b = Math.round(b / count);
-  return rgbToHsl(r, g, b);
-}
-
-function rgbToHsl(r, g, b) {
-  r /= 255; g /= 255; b /= 255;
-  const max = Math.max(r, g, b), min = Math.min(r, g, b);
-  let h, s, l = (max + min) / 2;
-  if (max === min) { h = s = 0; }
-  else {
-    const d = max - min; s = l > .5 ? d / (2 - max - min) : d / (max + min);
-    switch (max) {
-      case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-      case g: h = (b - r) / d + 2; break;
-      case b: h = (r - g) / d + 4; break;
-    }
-    h /= 6;
-  }
-  return [Math.round(h * 360), Math.round(s * 100), Math.round(l * 100)];
-}
-
-$('#accentFromImage')?.addEventListener('click', async () => {
-  const img = $('#accentSource');
-  const [h, s, l] = await extractAverageColorFromImage(img);
-  document.documentElement.style.setProperty('--brand', `${h} ${Math.min(90, Math.max(50, s))}% ${Math.min(60, Math.max(40, l))}%`);
-  document.documentElement.style.setProperty('--brand-2', `${(h + 40) % 360} ${Math.min(95, s + 10)}% ${Math.min(70, l + 10)}%`);
-  applyTheme(getTheme());
-});
+// Accent color from image extraction disabled for monochromatic design system
 
 // ---- i18n ----
 const dict = {
