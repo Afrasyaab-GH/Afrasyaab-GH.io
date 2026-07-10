@@ -1,20 +1,21 @@
-/* Design tokens: Material/One UI fusion */
+/* Design tokens: Al-Haq / One UI fusion */
 :root {
-  --brand: 200 90% 50%; /* sky-500 */
-  --brand-2: 260 83% 66%; /* violet */
-  --bg: 210 20% 98%;
-  --surface: 0 0% 100%;
-  --overlay: 210 20% 96%;
-  --text: 220 25% 12%;
-  --text-2: 220 10% 35%;
-  --border: 220 14% 90%;
+  --brand: 210 73% 15%; /* #0A2540 (Deep Blue) */
+  --brand-2: 46 65% 52%; /* #D4AF37 (Gold) */
+  --on-brand: 0 0% 100%; /* White */
+  --bg: 228 30% 98%; /* #f8f9fc */
+  --surface: 0 0% 100%; /* #ffffff */
+  --overlay: 220 20% 95%; /* #edf0f6 */
+  --text: 220 38% 11%; /* #111827 */
+  --text-2: 220 9% 34%; /* #4b5563 */
+  --border: 220 14% 83%; /* #d1d5db */
   --success: 145 58% 45%;
   --warning: 40 96% 50%;
   --danger: 0 84% 60%;
 
-  --radius: 16px;
+  --radius: 18px;
   --radius-sm: 12px;
-  --radius-lg: 28px; /* One UI pilliness */
+  --radius-lg: 28px;
   --shadow-1: 0 2px 10px hsl(220 3% 15% / 0.05);
   --shadow-2: 0 8px 24px hsl(220 3% 15% / 0.08);
   --shadow-3: 0 16px 40px hsl(220 3% 15% / 0.12);
@@ -23,7 +24,8 @@
   --container: 1120px;
 
   /* Typography */
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", "Georgia", serif;
   --size-0: clamp(0.84rem, 0.78rem + 0.3vw, 0.95rem);
   --size-1: clamp(1.00rem, 0.95rem + 0.35vw, 1.10rem);
   --size-2: clamp(1.20rem, 1.12rem + 0.6vw, 1.35rem);
@@ -36,12 +38,15 @@
 
 /* Dark theme */
 html.dark {
-  --bg: 220 20% 6.5%;
-  --surface: 220 14% 10%;
-  --overlay: 220 18% 12.5%;
-  --text: 210 20% 98%;
-  --text-2: 220 6% 70%;
-  --border: 220 10% 18%;
+  --brand: 46 65% 52%; /* #D4AF37 (Gold) */
+  --brand-2: 210 73% 15%; /* #0A2540 (Deep Blue) */
+  --on-brand: 210 73% 15%; /* Deep Blue on Gold */
+  --bg: 220 48% 8%; /* #0b1220 */
+  --surface: 223 47% 11%; /* #111827 */
+  --overlay: 222 47% 11%; /* #0f172a */
+  --text: 210 20% 98%; /* #f8fafc */
+  --text-2: 220 6% 70%; /* #94a3b8 */
+  --border: 220 10% 18%; /* #1e293b */
   --shadow-1: 0 2px 10px hsl(220 5% 3% / 0.5);
   --shadow-2: 0 8px 24px hsl(220 5% 3% / 0.6);
   --shadow-3: 0 16px 40px hsl(220 5% 3% / 0.7);
@@ -58,6 +63,9 @@ body {
   background: linear-gradient(180deg, hsl(var(--bg)) 0%, hsl(var(--overlay)) 100%);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, .display {
+  font-family: var(--font-serif);
 }
 /* Arabic script fallback for Pashto (ps) and Dari (fa) */
 html[lang="ps"], html[lang="fa"] { font-family: "Noto Naskh Arabic", var(--font-sans); }
@@ -98,7 +106,7 @@ a:hover { text-decoration: underline; }
 .btn { --_bg: hsl(var(--overlay)); --_fg: hsl(var(--text)); --_bd: transparent; display: inline-flex; gap: .5rem; align-items: center; justify-content: center; padding: .8rem 1rem; border: 1px solid var(--_bd); background: var(--_bg); color: var(--_fg); border-radius: var(--radius-lg); font-weight: 600; letter-spacing: .2px; transition: transform .15s var(--ease-spring-2), background .2s, box-shadow .2s; box-shadow: var(--shadow-1); }
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-2); text-decoration: none; }
 .btn:active { transform: translateY(0); }
-.btn--primary { --_bg: linear-gradient(135deg, hsl(var(--brand) / 0.95), hsl(var(--brand-2) / 0.95)); --_fg: white; }
+.btn--primary { --_bg: hsl(var(--brand)); --_fg: hsl(var(--on-brand)); }
 .btn--tonal { --_bg: hsl(var(--brand) / 0.1); --_fg: hsl(var(--brand)); }
 .btn--text { --_bg: transparent; --_fg: hsl(var(--brand)); box-shadow: none; border: none; padding-inline: .25rem; }
 
