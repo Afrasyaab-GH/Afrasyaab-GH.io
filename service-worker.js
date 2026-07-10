@@ -1,4 +1,4 @@
-const CACHE = 'hr-portfolio-v8-links-added';
+const CACHE = 'hr-portfolio-v9-all-links-synced';
 const ASSETS = [
   './',
   './index.html',
