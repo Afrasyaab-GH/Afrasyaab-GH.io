@@ -1,5 +1,9 @@
 # Afrasyaab Meranai (HabiburRahman) — Portfolio
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S41HUMXS)
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=flat-square&logo=github)](https://github.com/sponsors/Afrasyaab-GH)
+[![Patreon](https://img.shields.io/badge/Patreon-alhaq-FF424D?style=flat-square&logo=patreon)](https://patreon.com/alhaq)
+
 Modern, fast, and responsive portfolio with a Material + Samsung One UI inspired design. Ships with theming, small animations, and PWA basics.
 
 ## Features
