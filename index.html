@@ -40,6 +40,7 @@
           <li><a href="#about" data-i18n="nav.about">About</a></li>
           <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
           <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#sponsor">Sponsor</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           <li class="lang-picker">
             <label class="sr-only" for="langSelect">Language</label>
@@ -244,6 +245,31 @@
       <div class="container">
         <h2 data-i18n="section.projects.title">Featured Projects</h2>
         <div class="project-grid" data-reveal>
+          
+          <!-- Platen Typewriter -->
+          <article class="card project">
+            <div class="project__thumb">
+              <img src="assets/img/platen-logo.svg" alt="Platen: 3D Typewriter Logo" />
+            </div>
+            <h3>Platen: 3D Typewriter</h3>
+            <p>Photorealistic 3D mechanical typewriter simulator with spatial procedural Web Audio, proof-of-human-authorship recording, and invisible zero-width cryptographic seals. 100% on-device &amp; offline PWA.</p>
+            <div class="project__meta">
+              <span class="chip chip--studio">Al-Haq Studio</span>
+              <span class="chip">Three.js</span>
+              <span class="chip">Web Audio</span>
+              <span class="chip">Steganography</span>
+              <span class="chip">PWA</span>
+            </div>
+            <div class="actions">
+              <a class="btn btn--text" href="https://platen-typewriter.al-haq-studio.workers.dev" target="_blank"
+                rel="noopener noreferrer">Simulator</a>
+              <a class="btn btn--text" href="https://alhaq.uk/platen" target="_blank"
+                rel="noopener noreferrer">Showcase</a>
+              <a class="btn btn--text" href="https://github.com/alhaq-studio/platen-typewriter" target="_blank"
+                rel="noopener noreferrer">Repo</a>
+            </div>
+          </article>
+
           <article class="card project">
             <div class="project__thumb">
               <img src="assets/img/quran-reels-logo.png" alt="Quran Reels Generator Logo" />
@@ -421,6 +447,38 @@
                 target="_blank" rel="noopener noreferrer" data-i18n="btn.readme">README</a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support & Sponsorship -->
+    <section id="sponsor" class="section" style="background: rgba(14, 165, 233, 0.04); border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
+      <div class="container">
+        <div class="card" data-reveal style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <h2 style="font-size: 2rem; margin-bottom: 0.75rem;">Support My Work &amp; Community Mission</h2>
+          <p style="color: var(--color-muted, #94a3b8); line-height: 1.6; margin-bottom: 1.5rem;">
+            As an independent software engineer and author, I build open-source tools, privacy technologies, and educational platforms through <strong>Al-Haq Studio</strong> and the <strong>Al-Haq Community Initiative</strong>. Your patronage and sponsorship directly fund independent research, server hosting, and free public software.
+          </p>
+          <div class="actions" style="justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem;">
+            <a class="btn btn--primary" href="https://github.com/sponsors/Afrasyaab-GH" target="_blank" rel="noopener noreferrer">
+              GitHub Sponsors
+            </a>
+            <a class="btn btn--tonal" href="https://patreon.com/alhaq" target="_blank" rel="noopener noreferrer">
+              Patreon
+            </a>
+            <a class="btn btn--tonal" href="https://ko-fi.com/alhaq" target="_blank" rel="noopener noreferrer">
+              Ko-fi
+            </a>
+            <a class="btn btn--tonal" href="https://buymeacoffee.com/alhaq" target="_blank" rel="noopener noreferrer">
+              Buy Me a Coffee
+            </a>
+            <a class="btn" href="https://buy.stripe.com/28E3cwea897i8vkh2l14400" target="_blank" rel="noopener noreferrer">
+              Donate via Stripe
+            </a>
+          </div>
+          <small style="display: block; color: var(--color-muted, #94a3b8); font-size: 0.8rem;">
+            Personal community initiative by Habibur Rahman Meranai (UK sole trader). Not a registered charity or corporate trust.
+          </small>
         </div>
       </div>
     </section>
