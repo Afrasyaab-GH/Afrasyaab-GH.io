@@ -1,7 +1,7 @@
-# Afrasyaab Meranai (HabiburRahman) — Portfolio
+# Habib Mukhlis (Habibur Rahman) — Portfolio
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S41HUMXS)
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=flat-square&logo=github)](https://github.com/sponsors/Afrasyaab-GH)
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=flat-square&logo=github)](https://github.com/sponsors/habibmukhlis)
 [![Patreon](https://img.shields.io/badge/Patreon-alhaq-FF424D?style=flat-square&logo=patreon)](https://patreon.com/alhaq)
 
 Modern, fast, and responsive portfolio with a Material + Samsung One UI inspired design. Ships with theming, small animations, and PWA basics.
@@ -45,8 +45,8 @@ Steps (one-time):
 1. Push to `main` (already done)
 2. In GitHub → Settings → Pages → Build and deployment:
 	- Source: GitHub Actions
-3. Wait for the workflow to finish: https://github.com/Afrasyaab-GH/Afrasyaab-GH.io/actions/workflows/pages.yml
-4. Your site will be available at: https://afrasyaab-gh.github.io/Afrasyaab-GH.io/
+3. Wait for the workflow to finish: https://github.com/habibmukhlis/habibmukhlis.github.io/actions/workflows/pages.yml
+4. Your site will be available at: https://habibmukhlis.github.io/habibmukhlis.github.io/
 
 Tip: If you prefer the legacy option (Deploy from a branch), set Source: Branch → `main` → root, but the provided workflow is the recommended path.
 

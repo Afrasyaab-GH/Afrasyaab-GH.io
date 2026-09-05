@@ -240,7 +240,7 @@ initContactForm();
   const user = 'habibmukhlis2006';
   const domain = 'gmail.com';
   const subject = encodeURIComponent('Portfolio inquiry');
-  const body = encodeURIComponent("Hi Afrasyaab,\n\nI'd like to connect about...");
+  const body = encodeURIComponent("Hi Habib,\n\nI'd like to connect about...");
   const href = `mailto:${user}@${domain}?subject=${subject}&body=${body}`;
   $$('.email-link').forEach((a) => {
     a.addEventListener('click', (e) => {
